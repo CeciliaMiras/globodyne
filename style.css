@@ -196,7 +196,7 @@ h2{
 /*FOOTER LINKS*/
 .footer-links{
     background: #2f3640;
-    color: #616161;
+    color: #b1abab;
     font-size: 12px;
     padding: 35px 0;
 }
@@ -223,8 +223,8 @@ h2{
     line-height: 1.8;
 }
 .footer{
-    color: #2f3640;
-    color: #616161;
+    
+    color: #6d6464;
     font-size: 12px;
     padding: 20px 0;
     text-align: center;
@@ -280,9 +280,53 @@ h2{
     padding: 60px 20px;
 
    }
+   .footer-containers{
+    grid-template-columns: repeat(1,1fr);
+}
    
 }
 i{
     color: goldenrod; 
     text-shadow: 0 0 3px #FFFF00;
 }
+
+
+@media only screen and (max-width: 400px) {
+    .news-cards{
+     grid-template-columns: repeat(1,1fr);
+    }
+    .news-cards img{
+     height: 270px;
+    }
+    .cards-banner-one .content,
+    .cards-banner-two .content{
+     width: 100%;
+     padding: 60px 20px;
+ 
+    }
+    i{
+        color: goldenrod; 
+        text-shadow: 0 0 3px #FFFF00;
+    }
+    .nav-main{
+       grid-template-columns: repeat(1,1fr);
+    }
+    h2#Nosotros{
+       font-size: 20px;
+    }
+    img.nav-brand{
+        width: 100px;
+        height: 100px;
+    }
+    .footer-containers{
+        grid-template-columns: repeat(1,1fr);
+    }
+   p.s{
+        font-size: 12px;
+    }
+    .social{
+        padding: 40px;
+    }
+    
+ }
+ 
